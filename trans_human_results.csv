@@ -1,35 +1,4 @@
---32 x 32 Matrix:--
-Function 0 (2 total)
-Step 1: Validating and generating memory traces
-Step 2: Evaluating performance (s=5, E=1, b=5)
-func 0 (Transpose submission): hits:1765, misses:288, evictions:256
-
-Function 1 (2 total)
-Step 1: Validating and generating memory traces
-Step 2: Evaluating performance (s=5, E=1, b=5)
-func 1 (Simple row-wise scan transpose): hits:869, misses:1184, evictions:1152
-
-Summary for official submission (func 0): correctness=1 misses=288
-
-TEST_TRANS_RESULTS=1:288
-
---64 x 64 Matrix:--
-Function 0 (2 total)
-Step 1: Validating and generating memory traces
-Step 2: Evaluating performance (s=5, E=1, b=5)
-func 0 (Transpose submission): hits:6497, misses:1700, evictions:1668
-
-Function 1 (2 total)
-Step 1: Validating and generating memory traces
-Step 2: Evaluating performance (s=5, E=1, b=5)
-func 1 (Simple row-wise scan transpose): hits:3473, misses:4724, evictions:4692
-
-Summary for official submission (func 0): correctness=1 misses=1700
-
-TEST_TRANS_RESULTS=1:1700
-
---61 x 67 Matrix:--
-Function 0 (2 total)
-Step 1: Validating and generating memory traces
-Step 2: Evaluating performance (s=5, E=1, b=5)
-func 0 (Transpose submission): hits:6186, misses:1993, evictions:1961
+Matrix,M,N,Hits,Misses,Evictions
+32x32,32,32,1765,288,256
+64x64,64,64,6497,1700,1668
+61x67,61,67,6186,1993,1961
